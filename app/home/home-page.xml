@@ -1,0 +1,36 @@
+<Page id="mainPage" class="mainPage" navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar backgroundColor="black">
+        <Label text="RanCat"></Label>
+    </ActionBar>
+
+    <GridLayout >
+        <Image class="rancat-img" src="{{ imgData }}" loadMode="async" id="viewIMG" stretch="aspectFit" doubletap="{{ refreshTap }}"></Image>
+
+        <ActivityIndicator busy="{{ loadIndicator }}"  color="white" width="100" height="100"></ActivityIndicator>
+
+
+        <Button horizontalAlignment="left" verticalAlignment="bottom"  marginLeft="25%" marginBottom="5%"   class="dockBtn shareBtn" tap="{{ shareTap }}">
+            <FormattedString>
+                <Span text="&#xf14d;" class="fas"></Span>
+                <Span text=""></Span>
+            </FormattedString>
+        </Button>
+        <Button horizontalAlignment="center" verticalAlignment="bottom"  marginBottom="5%" class="dockBtn refreshBtn" id="{{ imgSrc }}" tap="{{ urlTap }}">
+            <FormattedString>
+                <Span text="&#xf0c1;" class="fas"></Span>
+                <Span text=""></Span>
+            </FormattedString>
+        </Button>
+        <Button horizontalAlignment="right" verticalAlignment="bottom" marginRight="25%" marginBottom="5%" class="dockBtn refreshBtn" id="{{ imgSrc }}" tap="{{ refreshTap }}">
+            <FormattedString>
+                <Span text="&#xf2f1;" class="fas"></Span>
+                <Span text=""></Span>
+            </FormattedString>
+        </Button>
+
+    </GridLayout>
+
+
+
+</Page>

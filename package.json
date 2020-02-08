@@ -1,0 +1,26 @@
+{
+  "nativescript": {
+    "id": "org.hik.rancat",
+    "tns-android": {
+      "version": "6.2.0"
+    },
+    "tns-ios": {
+      "version": "6.2.0"
+    }
+  },
+  "description": "Simple random cat photo app.",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "@nativescript/theme": "2.2.1",
+    "nativescript-admob": "4.0.1",
+    "tns-core-modules": "6.3.2"
+  },
+  "devDependencies": {
+    "nativescript-dev-webpack": "1.4.1",
+    "nativescript-social-share": "1.6.0"
+  },
+  "gitHead": "a6fec076a20f898feabb4466a2c411158c18a100",
+  "readme": "NativeScript Application",
+  "author": "Halil Kahraman"
+}
